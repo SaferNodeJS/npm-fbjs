@@ -107,8 +107,15 @@ gulp.task('watch', function() {
   gulp.watch(paths.src, ['lib', 'flow']);
 });
 
-gulp.task('build', function(cb) {
-  runSequence('check-dependencies', 'clean', ['lib', 'flow'], cb);
-});
+// gulp.task('build', function(cb) {
+//   runSequence('check-dependencies', 'clean', ['lib', 'flow'], cb);
+// });
 
-gulp.task('default', ['build']);
+// gulp.task('default', ['build']);
+
+var build =  function(cb) {
+  gulp.series('clean','lib','flow')
+  cb();
+}
+exports.build= build;
+exports.default= build;

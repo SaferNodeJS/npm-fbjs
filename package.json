@@ -20,7 +20,7 @@
     "del": "^2.2.0",
     "fbjs-scripts": "file:../fbjs-scripts",
     "flow-bin": "^0.99.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-flatten": "^0.2.0",
     "gulp-rename": "^1.2.2",
